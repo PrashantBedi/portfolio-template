@@ -29,7 +29,7 @@ export const darkTheme = createTheme({
             contrastText: '#fff'
         },
         secondary: {
-            main: '#19857b',
+            main: '#198534',
         },
         success: {
             main: green['800']
@@ -38,7 +38,7 @@ export const darkTheme = createTheme({
             main: red.A400,
         },
         background: {
-            default: '#2e2b2b',
+            default: '#2eb',
         },
     },
 });

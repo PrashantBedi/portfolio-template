@@ -6,10 +6,13 @@ import Typography from '@mui/material/Typography';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import BrightModeIcon from '@mui/icons-material/Brightness4';
 import {Grid, IconButton} from "@mui/material";
+import {DARK_THEME} from "../../constants";
+import cfg from "../../config";
+import changeTheme from "../../hooks/changeTheme";
 
-var mode = "lightmode"
+const CustomAppBar = () => {
+    const {theme, toggleTheme} = changeTheme()
 
-export default function CustomAppBar() {
     return (
         <Box sx={{flexGrow: 1}}>
             <AppBar position="static">
@@ -28,14 +31,15 @@ export default function CustomAppBar() {
                                 component="div"
                                 sx={{flexGrow: 1}}
                             >
-                                PrashantB
+                                {cfg.name}
                             </Typography>
                         </IconButton>
                         <IconButton
                             color="inherit"
+                            onClick={toggleTheme}
                         >
                             {
-                                (mode === "darkmode") ? <BrightModeIcon/> : <DarkModeIcon/>
+                                (theme === DARK_THEME) ? <BrightModeIcon/> : <DarkModeIcon/>
                             }
                         </IconButton>
                     </Grid>
@@ -44,3 +48,5 @@ export default function CustomAppBar() {
         </Box>
     );
 }
+
+export default CustomAppBar

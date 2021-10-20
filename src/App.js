@@ -1,13 +1,13 @@
 import './App.css';
 import {ThemeProvider} from "@mui/material";
-import {lightTheme} from "./Theme"
-import AppBar from "./appbar/appbar"
+import {darkTheme} from "./Theme"
+import AppBar from "./component/appbar/appbar"
 
 function App() {
   return (
-    <ThemeProvider theme={lightTheme}>
-      <AppBar/>
-    </ThemeProvider>
+      <ThemeProvider theme={darkTheme}>
+          <AppBar/>
+      </ThemeProvider>
   );
 }
 
