@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {DARK_THEME, LIGHT_THEME} from "../../constants";
+import {DARK_THEME, LIGHT_THEME} from "../../../constants";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
