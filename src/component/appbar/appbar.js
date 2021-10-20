@@ -8,7 +8,7 @@ import BrightModeIcon from '@mui/icons-material/Brightness4';
 import {Grid, IconButton} from "@mui/material";
 import {DARK_THEME} from "../../constants";
 import cfg from "../../config";
-import changeTheme from "../../hooks/changeTheme";
+import changeTheme from "../hooks/changeTheme";
 
 const CustomAppBar = () => {
     const {theme, toggleTheme} = changeTheme()
