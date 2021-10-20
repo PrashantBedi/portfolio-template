@@ -27,8 +27,8 @@ const CustomAppBar = () => {
                             color="inherit"
                         >
                             <Typography
-                                variant="h6"
-                                component="div"
+                                fontWeight="bold"
+                                variant="h5"
                                 sx={{flexGrow: 1}}
                             >
                                 {cfg.name}
