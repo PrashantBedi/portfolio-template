@@ -39,6 +39,20 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm run deploy`
+
+Deploys the application to github pages
+
+You should name the repository on github as <Your github username>.github.io
+
+### `Deploy on netlify`
+
+You need to install netlify cli using `npm install netlify-cli`
+
+Then run `netlify login`
+
+then run `netlify deploy`
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
