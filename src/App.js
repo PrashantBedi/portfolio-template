@@ -4,11 +4,17 @@ import {lightTheme} from "./Theme"
 import AppBar from "./component/appbar/appbar"
 import Profile from "./component/profile/profile";
 import {Grid} from "@material-ui/core";
+import {Helmet} from "react-helmet";
+import cfg from "./config";
 
 function App() {
     return (
-        <ThemeProvider theme={lightTheme}>
-            <AppBar/>
+        <fragment>
+            <Helmet>
+                <title>{cfg.title}</title>
+            </Helmet>
+            <ThemeProvider theme={lightTheme}>
+                <AppBar/>
                 <Grid
                     container
                     direction="row"
@@ -17,7 +23,8 @@ function App() {
                 >
                     <Profile/>
                 </Grid>
-        </ThemeProvider>
+            </ThemeProvider>
+        </fragment>
     );
 }
 
