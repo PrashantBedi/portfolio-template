@@ -1,4 +1,4 @@
-import {Box} from "@mui/material";
+import {Box, Card, CardMedia} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import {Grid, IconButton} from "@material-ui/core";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,7 +7,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import cfg from "../../config"
+import cfg from "../../../config"
+import "../profile.css"
 
 const Profile = () => {
     return (
@@ -21,12 +22,26 @@ const Profile = () => {
                 justifyContent="center"
                 alignItems="center"
             >
-                <img
-                    border="4%"
-                    width="80%"
-                    src={cfg.imageURL}
-                    alt={cfg.imageAltURL}
-                />
+                <Card sx={{
+                    borderRadius: "50%",
+                    bgcolor: 'primary.main',
+                    padding: "1%",
+                }}>
+                    <Grid
+                        container
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                    >
+                        <CardMedia
+                            component="img"
+                            image={cfg.imageURL}
+                            sx={{
+                                borderRadius: "50%"
+                            }}
+                        />
+                    </Grid>
+                </Card>
                 <Grid
                     container
                     direction="row"
@@ -42,46 +57,46 @@ const Profile = () => {
                             </IconButton>
                             : ""
                     }{
-                        cfg.socials.email !== "" ?
-                            <IconButton>
-                                <EmailIcon
-                                    color="primary"
-                                />
-                            </IconButton>
+                    cfg.socials.email !== "" ?
+                        <IconButton>
+                            <EmailIcon
+                                color="primary"
+                            />
+                        </IconButton>
                         : ""
-                    }{
-                        cfg.socials.facebook !== "" ?
-                            <IconButton>
-                                <FacebookIcon
-                                    color="primary"
-                                />
-                            </IconButton>
+                }{
+                    cfg.socials.facebook !== "" ?
+                        <IconButton>
+                            <FacebookIcon
+                                color="primary"
+                            />
+                        </IconButton>
                         : ""
-                    }{
-                        cfg.socials.youtube !== "" ?
-                            <IconButton>
-                                <YouTubeIcon
-                                    color="primary"
-                                />
-                            </IconButton>
+                }{
+                    cfg.socials.youtube !== "" ?
+                        <IconButton>
+                            <YouTubeIcon
+                                color="primary"
+                            />
+                        </IconButton>
                         : ""
-                    }{
-                        cfg.socials.instagram !== "" ?
-                            <IconButton>
-                                <InstagramIcon
-                                    color="primary"
-                                />
-                            </IconButton>
+                }{
+                    cfg.socials.instagram !== "" ?
+                        <IconButton>
+                            <InstagramIcon
+                                color="primary"
+                            />
+                        </IconButton>
                         : ""
-                    }{
-                        cfg.socials.linkedin !== "" ?
-                            <IconButton>
-                                <LinkedInIcon
-                                    color="primary"
-                                />
-                            </IconButton>
+                }{
+                    cfg.socials.linkedin !== "" ?
+                        <IconButton>
+                            <LinkedInIcon
+                                color="primary"
+                            />
+                        </IconButton>
                         : ""
-                    }
+                }
                 </Grid>
                 <Typography margin="3% 7%" fontSize="100%" fontWeight="Italic" color='inherit'>
                     {
