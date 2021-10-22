@@ -2,7 +2,7 @@ import './App.css';
 import {ThemeProvider} from "@mui/material";
 import {lightTheme} from "./Theme"
 import AppBar from "./component/appbar/appbar"
-import Profile from "./component/profile/css/profile";
+import Profile from "./component/profile/profile";
 import {Grid} from "@material-ui/core";
 import {Helmet} from "react-helmet";
 import cfg from "./config";

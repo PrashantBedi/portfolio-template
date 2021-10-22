@@ -7,14 +7,13 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import cfg from "../../../config"
-import "../profile.css"
+import cfg from "../../config"
 
 const Profile = () => {
     return (
         <Box
             width="30%"
-            margin="3% 0 0 0"
+            margin="4% 0 0 0"
         >
             <Grid
                 container
@@ -50,7 +49,10 @@ const Profile = () => {
                 >
                     {
                         cfg.socials.github !== "" ?
-                            <IconButton>
+                            <IconButton
+                                href={cfg.socials.github}
+                                target="new"
+                            >
                                 <GitHubIcon
                                     color="primary"
                                 />
@@ -58,7 +60,10 @@ const Profile = () => {
                             : ""
                     }{
                     cfg.socials.email !== "" ?
-                        <IconButton>
+                        <IconButton
+                            target="new"
+                            href={"mailto:" + cfg.socials.email}
+                        >
                             <EmailIcon
                                 color="primary"
                             />
@@ -66,7 +71,10 @@ const Profile = () => {
                         : ""
                 }{
                     cfg.socials.facebook !== "" ?
-                        <IconButton>
+                        <IconButton
+                            href={cfg.socials.facebook}
+                            target="new"
+                        >
                             <FacebookIcon
                                 color="primary"
                             />
@@ -74,7 +82,10 @@ const Profile = () => {
                         : ""
                 }{
                     cfg.socials.youtube !== "" ?
-                        <IconButton>
+                        <IconButton
+                            href={cfg.socials.youtube}
+                            target="new"
+                        >
                             <YouTubeIcon
                                 color="primary"
                             />
@@ -82,7 +93,10 @@ const Profile = () => {
                         : ""
                 }{
                     cfg.socials.instagram !== "" ?
-                        <IconButton>
+                        <IconButton
+                            href={cfg.socials.instagram}
+                            target="new"
+                        >
                             <InstagramIcon
                                 color="primary"
                             />
@@ -90,7 +104,10 @@ const Profile = () => {
                         : ""
                 }{
                     cfg.socials.linkedin !== "" ?
-                        <IconButton>
+                        <IconButton
+                            href={cfg.socials.linkedin}
+                            target="new"
+                        >
                             <LinkedInIcon
                                 color="primary"
                             />
@@ -98,7 +115,7 @@ const Profile = () => {
                         : ""
                 }
                 </Grid>
-                <Typography margin="3% 7%" fontSize="100%" fontWeight="Italic" color='inherit'>
+                <Typography margin="2% 0" fontSize="100%" fontWeight="Italic" color='inherit'>
                     {
                         cfg.description
                             .map(
