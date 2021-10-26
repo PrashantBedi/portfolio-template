@@ -13,7 +13,7 @@ const Profile = () => {
     return (
         <Box
             width="30%"
-            margin="4% 0 0 0"
+            margin="1% 0 0 0"
         >
             <Grid
                 container
