@@ -1,11 +1,12 @@
 import './App.css';
-import {ThemeProvider} from "@mui/material";
+import {Box, ThemeProvider} from "@mui/material";
 import {lightTheme} from "./Theme"
 import AppBar from "./component/appbar/appbar"
 import Profile from "./component/profile/profile";
 import {Grid} from "@material-ui/core";
 import {Helmet} from "react-helmet";
 import cfg from "./config";
+import Blogs from "./component/blogs/blogs";
 
 function App() {
     return (
@@ -15,14 +16,18 @@ function App() {
             </Helmet>
             <ThemeProvider theme={lightTheme}>
                 <AppBar/>
-                <Grid
-                    container
-                    direction="row"
-                    justifyContent="space-around"
-                    alignItems="center"
-                >
-                    <Profile/>
-                </Grid>
+                <marquee>This site is under construction</marquee>
+                <Box width="100%">
+                    <Grid
+                        container
+                        direction="row"
+                        justifyContent="space-evenly"
+                        alignItems="center"
+                    >
+                        <Profile/>
+                        <Blogs/>
+                    </Grid>
+                </Box>
             </ThemeProvider>
         </fragment>
     );

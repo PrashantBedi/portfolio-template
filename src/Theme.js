@@ -5,7 +5,7 @@ export const lightTheme = createTheme({
     palette: {
         primary: {
             main: '#556cd6',
-            contrastText: '#fff'
+            contrastText: '#f0f0f0'
         },
         secondary: {
             main: '#19857b',
@@ -17,8 +17,11 @@ export const lightTheme = createTheme({
             main: red.A400,
         },
         background: {
-            default: '#fff',
+            default: '#f0f0f0',
         },
+        cardShadow: {
+            default: '5px 5px 8px grey'
+        }
     },
 });
 
