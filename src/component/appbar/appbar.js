@@ -30,6 +30,7 @@ const CustomAppBar = () => {
                                 fontWeight="bold"
                                 variant="h5"
                                 sx={{flexGrow: 1}}
+                                fontFamily="Lato"
                             >
                                 {cfg.name}
                             </Typography>

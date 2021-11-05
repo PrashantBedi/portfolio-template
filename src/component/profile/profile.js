@@ -22,7 +22,8 @@ const Profile = () => {
                 alignItems="center"
             >
                 <Card sx={{
-                    borderRadius: "50%",
+                    // borderRadius: "50%",
+                    width: "75%",
                     bgcolor: 'primary.main',
                     padding: "1%",
                 }}>
@@ -36,7 +37,8 @@ const Profile = () => {
                             component="img"
                             image={cfg.imageURL}
                             sx={{
-                                borderRadius: "50%"
+                                // borderRadius: "50%"
+                                width: "100%"
                             }}
                         />
                     </Grid>
@@ -115,7 +117,7 @@ const Profile = () => {
                         : ""
                 }
                 </Grid>
-                <Typography margin="2% 0" fontSize="100%" fontWeight="Italic" color='inherit'>
+                <Typography margin="2% 0" fontSize="110%" fontWeight="Italic" color='inherit' fontFamily="Lato">
                     {
                         cfg.description
                             .map(
@@ -134,27 +136,27 @@ const Profile = () => {
                     alignItems="center"
                 >
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary'>
+                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
                             Home
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary'>
+                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
                             Blogs
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary'>
+                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
                             Project
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary'>
+                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
                             Resume
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary'>
+                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
                             About
                         </Typography>
                     </IconButton>
@@ -162,6 +164,7 @@ const Profile = () => {
                 <Typography
                     fontSize="50%"
                     fontStyle="italic"
+                    fontFamily="Lato"
                 >
                     Designed and Build by Prashant Bedi
                 </Typography>
