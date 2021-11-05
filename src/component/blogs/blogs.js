@@ -1,12 +1,15 @@
-import {Box, Card, CardContent, CardMedia, Grid, Typography} from "@mui/material";
+import {Box, Card, CardContent, CardMedia, Grid, Pagination, Typography} from "@mui/material";
+import {MAX_BLOGS_PER_PAGE} from "../../constants";
+import changePage from "./hooks/onPageClick"
 
-const blogs = ["What is Gravity?", "Newtons law of Gravity", "Whats theory of Relativity", "Golang"]
+const blogs = ["What is Gravity?", "Newtons law of Gravity", "Whats theory of Relativity", "Golang", "Nano"]
 
 const Blogs = () => {
+    const {pageNumber, onPageChange} = changePage()
+
     return (
         <Box
             width="60%"
-            margin="2% 0"
         >
             <Grid
                 container
@@ -15,27 +18,47 @@ const Blogs = () => {
                 alignItems="center"
             >
                 {
-                    blogs.map(blog =>
+                    blogs.filter((blogs, index) => {
+                            if (index >= MAX_BLOGS_PER_PAGE * (pageNumber - 1) && index < (MAX_BLOGS_PER_PAGE * pageNumber)) {
+                                return blogs
+                            }
+                            return null
+                        }
+                    ).map((blog, index) =>
                         <Card
+                            id={index}
                             sx={{
                                 margin: "2%",
                                 width: "40%",
-                                height: "300px",
                                 boxShadow: '7px 7px 12px grey'
                             }}
                         >
-                            <CardMedia src="https://i.ytimg.com/vi/Kw51KiZhm0I/maxresdefault.jpg" component="img"/>
+                            <CardMedia
+                                src="https://i.ytimg.com/vi/Kw51KiZhm0I/maxresdefault.jpg" component="img"
+                            />
                             <CardContent>
-                                <Typography fontWeight="bold" variant="h6">
+                                <Typography fontWeight="bold" variant="h6" id={index}>
                                     {blog}
                                 </Typography>
-                                <Typography gutterBottom fontSize="10" variant="body2" style={{overflow: "hidden", width: "90%"}}>
+                                <Typography gutterBottom fontSize="10" variant="body2" style={{width: "90%"}} noWrap>
                                     Small desciption about my blog
                                 </Typography>
                             </CardContent>
                         </Card>
                     )
                 }
+            </Grid>
+            <Grid
+                container
+                direction="row"
+                justifyContent="space-evenly"
+                alignItems="flex-end"
+            >
+                <Pagination
+                    count={Math.ceil(blogs.length / 4)}
+                    color="primary"
+                    onChange={onPageChange}
+                />
             </Grid>
         </Box>
     )

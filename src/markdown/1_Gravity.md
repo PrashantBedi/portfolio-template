@@ -1,0 +1,1 @@
+Gravity Small desciption about my blog
