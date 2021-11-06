@@ -13,7 +13,7 @@ const cfg = {
   "socials": { //keep value "" to hide a social from ui
     "github": "https://www.github.com/Prashant2411",
     "linkedin": "https://www.linkedin.com/in/prashant-bedi-620738178",
-    "instagram": "https://www.instagram.com/__god.of.mischief___/",
+    "instagram": "https://www.instagram.com/p_bedi_21/",
     "email": "prashantbedi241197@gmail.com",
     "youtube": "https://www.youtube.com/channel/UCjoExLiPcSXkNYAtpe-OBdg",
     "facebook": "" // value hides facebook icon from ui
