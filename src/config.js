@@ -1,9 +1,9 @@
 const cfg = {
   "title": "Prashant's Wiki", //title of the window tab
-  "name": "PrashantB", //name of website
-  "imageURL": "https://lh3.googleusercontent.com/pw/AM-JKLWYyCrnM3D4hRx5zSjupSzhq" +
-      "GCz2mzZlladJlbxw0t7OfdBIP9xbP_pAKLqb-fj3eCanwbpqUs0J7kHsyY3CX36ZZXM85qVp6c" +
-      "hS-RdmHazYHd8s3URjN7E5dKl0LEIKANkvcExxiYqGI8jjOOTjfF-=w1912-h1578-no?authuser=0", //your image url
+  "name": "PrashantBedi", //name of website
+  "imageURL": "https://lh3.googleusercontent.com/pw/AM-JKLXwFUe8glrcm4Xr3ibYp1lKGvu9LZVNOkSsw130_bcA7q" +
+      "iQn829LMSasQJmjN6D7cU1BNJ4mISBJgxN9Yvf-dbCtkH6Ozq47wXZkVHcKlrA_a1uuYxKSbQMLuWVaxnj7w1OB7ym6om_z" +
+      "_G9VW6yHvVo=w822-h1078-no?authuser=0", //your image url
   "description": [ //description about you
       "Hey everyone!",
       "I am a software developer interested in physics, gaming and tech. " +

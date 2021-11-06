@@ -56,7 +56,7 @@ const Profile = () => {
                                 target="new"
                             >
                                 <GitHubIcon
-                                    color="primary"
+                                    color="secondary"
                                 />
                             </IconButton>
                             : ""
@@ -67,7 +67,7 @@ const Profile = () => {
                             href={"mailto:" + cfg.socials.email}
                         >
                             <EmailIcon
-                                color="primary"
+                                color="secondary"
                             />
                         </IconButton>
                         : ""
@@ -78,7 +78,7 @@ const Profile = () => {
                             target="new"
                         >
                             <FacebookIcon
-                                color="primary"
+                                color="secondary"
                             />
                         </IconButton>
                         : ""
@@ -89,7 +89,7 @@ const Profile = () => {
                             target="new"
                         >
                             <YouTubeIcon
-                                color="primary"
+                                color="secondary"
                             />
                         </IconButton>
                         : ""
@@ -100,7 +100,7 @@ const Profile = () => {
                             target="new"
                         >
                             <InstagramIcon
-                                color="primary"
+                                color="secondary"
                             />
                         </IconButton>
                         : ""
@@ -111,13 +111,13 @@ const Profile = () => {
                             target="new"
                         >
                             <LinkedInIcon
-                                color="primary"
+                                color="secondary"
                             />
                         </IconButton>
                         : ""
                 }
                 </Grid>
-                <Typography margin="2% 0" fontSize="110%" fontWeight="Italic" color='inherit' fontFamily="Lato">
+                <Typography margin="1% 0" fontSize="110%"  color='secondary' fontFamily="Lato">
                     {
                         cfg.description
                             .map(
@@ -136,27 +136,27 @@ const Profile = () => {
                     alignItems="center"
                 >
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
                             Home
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
                             Blogs
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
                             Project
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
                             Resume
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='primary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
                             About
                         </Typography>
                     </IconButton>
