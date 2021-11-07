@@ -5,15 +5,15 @@ const path = "/Users/prashantbedi/websites/prashantb/src/markdown"
 
 const components = preval`
 const fs = require("fs");
-const files = fs.readdirSync("./prashantb/src/markdown");
+const files = fs.readdirSync("/Users/prashantbedi/websites/prashantb/src/markdown");
 module.exports = files`;
 
 const contentOfComponents = preval`
 const fs = require("fs");
-const files = fs.readdirSync("./prashantb/src/markdown");
+const files = fs.readdirSync("/Users/prashantbedi/websites/prashantb/src/markdown");
 const content = files.map(filename => {
   const fs = require("fs");
-  const url = './prashantb/src/markdown'+'/'+filename;
+  const url = '/Users/prashantbedi/websites/prashantb/src/markdown'+'/'+filename;
   return fs.readFileSync(url).toString();
 })
 module.exports = content`;

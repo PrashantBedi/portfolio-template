@@ -6,4 +6,4 @@ data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFRUYGBgYGhkZG
 ----------
 Physics
 ----------
-Law that covers flaws in theory of relativity
+Law that covers flaws in newton's law of gravity
