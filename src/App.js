@@ -17,6 +17,7 @@ function App() {
             </Helmet>
             <ThemeProvider theme={theme}>
                 <AppBar/>
+                {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
                 <marquee>This site is under construction</marquee>
                 <Box width="100%">
                     <Grid
