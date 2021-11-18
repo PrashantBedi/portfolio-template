@@ -21,9 +21,9 @@ function App() {
                 <AppBar/>
                 {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
                 <marquee>This site is under construction</marquee>
-                {
-                    isMobile ?
-                        <Box width="100%">
+                <Box width="100%">
+                    {
+                        isMobile ?
                             <Grid
                                 container
                                 direction="column"
@@ -32,9 +32,7 @@ function App() {
                             >
                                 <Blogs isMobile={isMobile}/>
                                 <Profile isMobile={isMobile}/>
-                            </Grid>
-                        </Box> :
-                        <Box width="100%">
+                            </Grid> :
                             <Grid
                                 container
                                 direction="row"
@@ -44,8 +42,8 @@ function App() {
                                 <Profile isMobile={isMobile}/>
                                 <Blogs isMobile={isMobile}/>
                             </Grid>
-                        </Box>
-                }
+                    }
+                </Box>
             </ThemeProvider>
         </Box>
     );
