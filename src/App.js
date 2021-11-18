@@ -7,8 +7,10 @@ import {Grid} from "@material-ui/core";
 import {Helmet} from "react-helmet";
 import cfg from "./config";
 import Blogs from "./component/blogs/blogs";
+import resize from "./AppHooks"
 
 function App() {
+    const {isMobile} = resize()
 
     return (
         <Box>
@@ -19,17 +21,31 @@ function App() {
                 <AppBar/>
                 {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
                 <marquee>This site is under construction</marquee>
-                <Box width="100%">
-                    <Grid
-                        container
-                        direction="row"
-                        justifyContent="space-evenly"
-                        alignItems="center"
-                    >
-                        <Profile/>
-                        <Blogs/>
-                    </Grid>
-                </Box>
+                {
+                    isMobile ?
+                        <Box width="100%">
+                            <Grid
+                                container
+                                direction="column"
+                                justifyContent="space-evenly"
+                                alignItems="center"
+                            >
+                                <Blogs isMobile={isMobile}/>
+                                <Profile isMobile={isMobile}/>
+                            </Grid>
+                        </Box> :
+                        <Box width="100%">
+                            <Grid
+                                container
+                                direction="row"
+                                justifyContent="space-evenly"
+                                alignItems="center"
+                            >
+                                <Profile isMobile={isMobile}/>
+                                <Blogs isMobile={isMobile}/>
+                            </Grid>
+                        </Box>
+                }
             </ThemeProvider>
         </Box>
     );

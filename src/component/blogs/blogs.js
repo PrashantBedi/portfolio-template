@@ -3,13 +3,13 @@ import {MAX_BLOGS_PER_PAGE} from "../../constants";
 import changePage from "./hooks/onPageClick"
 import readFiles from "./hooks/readBlogs"
 
-const Blogs = () => {
+const Blogs = ({isMobile}) => {
     const {pageNumber, onPageChange} = changePage()
     const {readFileNames, fileContent} = readFiles()
 
     return (
         <Box
-            width="60%"
+            width={isMobile ? "100%" : "60%"}
         >
             <Grid
                 container

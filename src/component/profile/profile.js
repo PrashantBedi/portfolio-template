@@ -9,10 +9,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import cfg from "../../config"
 
-const Profile = () => {
+const Profile = ({isMobile}) => {
     return (
         <Box
-            width="30%"
+            width={isMobile ? "100%" : "30%"}
             margin="1% 0 0 0"
         >
             <Grid
