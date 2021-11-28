@@ -9,9 +9,32 @@ import cfg from "./config";
 import Blogs from "./component/blogs/blogs";
 import resize from "./AppHooks"
 import {LIGHT_THEME} from "./constants";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
     const {isMobile, theme, toggleTheme} = resize()
+
+    const mobileRoutes = () => {
+        return <Router>
+            <Routes>
+                <Route path="/" element={<Profile isMobile={isMobile}/>}/>
+                <Route path="/blogs"/>
+                <Route path="/project"/>
+                <Route path="/about"/>
+            </Routes>
+        </Router>
+    }
+
+    const otherRoutes = () => {
+        return <Router>
+            <Routes>
+                <Route path="/" element={<Blogs isMobile={isMobile} theme={theme}/>}/>
+                <Route path="/blogs"/>
+                <Route path="/project"/>
+                <Route path="/about"/>
+            </Routes>
+        </Router>
+    }
 
     return (
         <ThemeProvider theme={(theme === LIGHT_THEME) ? lightTheme : darkTheme}>
@@ -19,10 +42,10 @@ function App() {
                 <Helmet>
                     <title>{cfg.title}</title>
                 </Helmet>
-                <AppBar theme={theme} toggleTheme={toggleTheme} />
+                <AppBar theme={theme} toggleTheme={toggleTheme}/>
                 {/*<marquee>This site is under construction</marquee>*/}
                 {
-                    isMobile ? <Profile isMobile={isMobile}/> :
+                    isMobile ? mobileRoutes() :
                         <fragment>
                             <Grid
                                 container
@@ -30,7 +53,7 @@ function App() {
                                 justifyContent="space-evenly"
                                 alignItems="center"
                             >
-                                <Blogs isMobile={isMobile} theme={theme}/>
+                                {otherRoutes()}
                                 <Profile isMobile={isMobile}/>
                             </Grid>
                         </fragment>
