@@ -19,8 +19,8 @@ function App() {
                 <Helmet>
                     <title>{cfg.title}</title>
                 </Helmet>
-                <AppBar theme={theme} toggleTheme={toggleTheme}/>
-                <marquee>This site is under construction</marquee>
+                <AppBar theme={theme} toggleTheme={toggleTheme} />
+                {/*<marquee>This site is under construction</marquee>*/}
                 {
                     isMobile ? <Profile isMobile={isMobile}/> :
                         <fragment>

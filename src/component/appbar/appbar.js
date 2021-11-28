@@ -12,7 +12,7 @@ import cfg from "../../config";
 const CustomAppBar = ({theme, toggleTheme}) => {
 
     return (
-        <Box sx={{flexGrow: 1}}>
+        <Box sx={{flexGrow: 1}} marginBottom="2%">
             <AppBar position="static">
                 <Toolbar>
                     <Grid
