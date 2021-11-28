@@ -23,7 +23,7 @@ const Profile = ({isMobile}) => {
             >
                 <Card sx={{
                     // borderRadius: "50%",
-                    width: "75%",
+                    width: "60%",
                     bgcolor: 'primary.main',
                     padding: "1%",
                 }}>
@@ -165,6 +165,7 @@ const Profile = ({isMobile}) => {
                     fontSize="50%"
                     fontStyle="italic"
                     fontFamily="Lato"
+                    color="secondary"
                 >
                     Designed and Build by Prashant Bedi
                 </Typography>

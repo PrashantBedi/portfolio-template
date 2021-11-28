@@ -1,9 +1,9 @@
 import {Box, Card, CardContent, CardMedia, Grid, Pagination, Typography} from "@mui/material";
-import {MAX_BLOGS_PER_PAGE} from "../../constants";
+import {LIGHT_THEME, MAX_BLOGS_PER_PAGE} from "../../constants";
 import changePage from "./hooks/onPageClick"
 import readFiles from "./hooks/readBlogs"
 
-const Blogs = ({isMobile}) => {
+const Blogs = ({isMobile, theme}) => {
     const {pageNumber, onPageChange} = changePage()
     const {readFileNames, fileContent} = readFiles()
 
@@ -29,8 +29,9 @@ const Blogs = ({isMobile}) => {
                             id={index}
                             sx={{
                                 margin: "2%",
-                                width: "40%",
-                                boxShadow: '7px 7px 12px grey'
+                                width: ((isMobile) ? "75%" : "40%"),
+                                boxShadow: (theme === LIGHT_THEME ? '7px 7px 12px grey' : '3px 3px 7px #45433f'),
+                                bgcolor: "background.default"
                             }}
                         >
                             <CardMedia
