@@ -1,19 +1,28 @@
 import preval from "preval.macro";
 
-// eslint-disable-next-line no-unused-vars
 const path = "/Users/prashantbedi/websites/prashantb/src/markdown"
 
 const components = preval`
 const fs = require("fs");
+const files = fs.readdirSync("${path}");
+module.exports = files
+`;
+
+const blogDate = preval`
+var dates = []
+const fs = require("fs");
 const files = fs.readdirSync("/Users/prashantbedi/websites/prashantb/src/markdown");
-module.exports = files`;
+for (let i = 0; i < files.length; i++) {
+    dates.push(fs.statSync("${path}"+'/'+files[i]).birthtime)
+}
+module.exports = dates`;
 
 const contentOfComponents = preval`
 const fs = require("fs");
-const files = fs.readdirSync("/Users/prashantbedi/websites/prashantb/src/markdown");
+const files = fs.readdirSync("${path}");
 const content = files.map(filename => {
   const fs = require("fs");
-  const url = '/Users/prashantbedi/websites/prashantb/src/markdown'+'/'+filename;
+  const url = '${path}'+'/'+filename;
   return fs.readFileSync(url).toString();
 })
 module.exports = content`;
@@ -27,12 +36,13 @@ export default () => {
     const fileContent = (index) => {
         let content = contentOfComponents[index]
         let split = content.split("----------");
+
         return {
             "Title": split[0],
-            "Date": split[1],
-            "Image": split[2],
-            "Genre": split[3],
-            "Body": split[4]
+            "Date": blogDate[index],
+            "Image": split[1],
+            "Genre": split[2],
+            "Body": split[3]
         }
     }
 

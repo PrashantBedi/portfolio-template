@@ -17,7 +17,18 @@ const cfg = {
     "email": "prashantbedi241197@gmail.com",
     "youtube": "https://www.youtube.com/channel/UCjoExLiPcSXkNYAtpe-OBdg",
     "facebook": "" // value hides facebook icon from ui
-  }
+  },
+  "projects": [
+      {
+          "title": "Template Portfolio",
+          "url": "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6010812cc0c" +
+              "29a2e63eb4337_6002086f72b727525f01ded8_hIHR52O3L00xoYwyu2ojKWqVuKktQL8UNah5qUqx" +
+              "XuG0cduC_TK6-4ODEOrhRCG1_twykWUpdmJ9jevrbsqQoOkRv167Cskgq_uf1xoP9YQQ48Mv-s7AeUh" +
+              "y4LFYMygpJTPKUWcM.jpeg",
+          "duration": "1 months",
+          "description": "A template in react to create a portfolio website"
+      },
+  ]
 }
 
 export default cfg

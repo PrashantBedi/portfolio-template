@@ -1,7 +1,7 @@
 import {Box, Card, CardContent, CardMedia, Grid, Pagination, Typography} from "@mui/material";
 import {LIGHT_THEME, MAX_BLOGS_PER_PAGE} from "../../constants";
 import changePage from "./hooks/onPageClick"
-import readFiles from "./hooks/readBlogs"
+import readFiles from "../../readBlogs/readBlogs"
 
 const Blogs = ({isMobile, theme}) => {
     const {pageNumber, onPageChange} = changePage()
@@ -10,6 +10,7 @@ const Blogs = ({isMobile, theme}) => {
     return (
         <Box
             width={isMobile ? "100%" : "60%"}
+            margin="1% 0 0 0"
         >
             <Grid
                 container
@@ -29,7 +30,7 @@ const Blogs = ({isMobile, theme}) => {
                             id={index}
                             sx={{
                                 margin: "2%",
-                                width: ((isMobile) ? "75%" : "40%"),
+                                width: ((isMobile) ? "70%" : "40%"),
                                 boxShadow: (theme === LIGHT_THEME ? '7px 7px 12px grey' : '3px 3px 7px #45433f'),
                                 bgcolor: "background.default"
                             }}

@@ -8,12 +8,25 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import cfg from "../../config"
+import { Navigate } from 'react-router-dom';
+
+const onHomeClick = () => {
+    return <Navigate to='/' />
+}
+
+const onProjectClick = () => {
+    return <Navigate to='/project' />
+}
+
+const onBlogClick = () => {
+    return <Navigate to='/blog' />
+}
 
 const Profile = ({isMobile}) => {
     return (
         <Box
             width={isMobile ? "100%" : "30%"}
-            margin="1% 0 0 0"
+            margin="3% 0 0 0"
         >
             <Grid
                 container
@@ -37,7 +50,6 @@ const Profile = ({isMobile}) => {
                             component="img"
                             image={cfg.imageURL}
                             sx={{
-                                // borderRadius: "50%"
                                 width: "100%"
                             }}
                         />
@@ -117,7 +129,7 @@ const Profile = ({isMobile}) => {
                         : ""
                 }
                 </Grid>
-                <Typography margin="1% 0" fontSize="110%"  color='secondary' fontFamily="Lato">
+                <Typography margin="1% 0" fontSize="110%" color='secondary' fontFamily="Lato">
                     {
                         cfg.description
                             .map(
@@ -136,17 +148,20 @@ const Profile = ({isMobile}) => {
                     alignItems="center"
                 >
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato" onClick={onHomeClick}>
                             Home
                         </Typography>
                     </IconButton>
+                    {
+                        isMobile ?
+                        <IconButton>
+                            <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato" onClick={onBlogClick}>
+                                Blogs
+                            </Typography>
+                        </IconButton> : ""
+                    }
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
-                            Blogs
-                        </Typography>
-                    </IconButton>
-                    <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato" onClick={onProjectClick}>
                             Project
                         </Typography>
                     </IconButton>
