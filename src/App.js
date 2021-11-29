@@ -30,24 +30,34 @@ function App() {
     const mobileRoutes = () => {
         return <Router>
             <Routes>
-                <Route path="/"
-                       element={<Profile isMobile={isMobile}
-                                         onBlogClick={onBlogClick}
-                                         onHomeClick={onHomeClick}
-                                         onProjectClick={onProjectClick}
-                       />}
+                <Route
+                    path="/"
+                    element={
+                        <Profile
+                            isMobile={isMobile}
+                            onBlogClick={onBlogClick}
+                            onHomeClick={onHomeClick}
+                            onProjectClick={onProjectClick}
+                        />}
                 />
-                <Route path="/blogs"
-                       element={<Blogs isMobile={isMobile}
-                                       theme={theme}
-                       />}
+                <Route
+                    path="/blogs"
+                    element={
+                        <Blogs
+                            isMobile={isMobile}
+                            theme={theme}
+                        />}
                 />
-                <Route path="/project"
-                       element={<Projects isMobile={isMobile}
-                                          theme={theme}
-                       />}
+                <Route
+                    path="/project"
+                    element={
+                        <Projects
+                            isMobile={isMobile}
+                            theme={theme}
+                        />}
                 />
-                <Route path="/about"/>
+                <Route
+                    path="/about"/>
             </Routes>
         </Router>
     }
@@ -55,29 +65,53 @@ function App() {
     const otherRoutes = () => {
         return <Router>
             <Routes>
-                <Route path="/"
-                       element={<Blogs isMobile={isMobile}
-                                       theme={theme}
-                       />}
+                <Route
+                    path="/"
+                    element={
+                        <Blogs
+                            isMobile={isMobile}
+                            theme={theme}
+                        />}
                 />
-                <Route path="/project"
-                       element={<Projects isMobile={isMobile}
-                                          theme={theme}
-                       />}
+                <Route
+                    path="/project"
+                    element={
+                        <Projects
+                            isMobile={isMobile}
+                            theme={theme}
+                        />}
                 />
-                <Route path="/about"/>
+                <Route
+                    path="/about"
+                />
             </Routes>
         </Router>
     }
 
     return (
-        <ThemeProvider theme={(theme === LIGHT_THEME) ? lightTheme : darkTheme}>
-            <Box width="100%" sx={{bgcolor: 'background.default', height: "105vh"}}>
+        <ThemeProvider
+            theme={(theme === LIGHT_THEME) ? lightTheme : darkTheme}
+        >
+            <Box
+                width="100%"
+                sx={{
+                    bgcolor: 'background.default',
+                    height: "105vh"
+                }}
+            >
                 <Helmet>
-                    <title>{cfg.title}</title>
+                    <title>
+                        {cfg.title}
+                    </title>
                 </Helmet>
-                <AppBar theme={theme} toggleTheme={toggleTheme} onHomeClick={onHomeClick}/>
-                <marquee>This site is under construction</marquee>
+                <AppBar
+                    theme={theme}
+                    toggleTheme={toggleTheme}
+                    onHomeClick={onHomeClick}
+                />
+                <marquee>
+                    This site is under construction
+                </marquee>
                 {
                     isMobile ? mobileRoutes() :
                         <React.Fragment>
@@ -88,8 +122,12 @@ function App() {
                                 alignItems="flex-start"
                             >
                                 {otherRoutes()}
-                                <Profile isMobile={isMobile} onBlogClick={onBlogClick} onHomeClick={onHomeClick}
-                                         onProjectClick={onProjectClick}/>
+                                <Profile
+                                    isMobile={isMobile}
+                                    onBlogClick={onBlogClick}
+                                    onHomeClick={onHomeClick}
+                                    onProjectClick={onProjectClick}
+                                />
                             </Grid>
                         </React.Fragment>
                 }

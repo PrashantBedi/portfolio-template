@@ -17,7 +17,7 @@ export const lightTheme = createTheme({
             main: red.A400,
         },
         background: {
-                default: '#f0f0f0',
+            default: '#f0f0f0',
         },
     },
     typography: {
@@ -46,5 +46,10 @@ export const darkTheme = createTheme({
             default: '#646464',
         },
     },
+    typography: {
+        fontFamily: [
+            'Lato'
+        ]
+    }
 });
 

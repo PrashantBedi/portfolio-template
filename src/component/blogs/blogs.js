@@ -40,12 +40,25 @@ const Blogs = ({isMobile, theme}) => {
                                 component="img"
                             />
                             <CardContent>
-                                <Typography fontWeight="bold" variant="h6" id={index} style={{width: "90%"}}
-                                            color="secondary" noWrap>
+                                <Typography
+                                    fontWeight="bold"
+                                    variant="h6"
+                                    style={{width: "90%"}}
+                                    color="secondary"
+                                    noWrap
+                                >
                                     {fileContent(index).Title}
                                 </Typography>
-                                <Typography gutterBottom fontSize="10" variant="body2" style={{width: "90%"}}
-                                            color="secondary" noWrap>
+                                <Typography
+                                    gutterBottom
+                                    fontSize="10"
+                                    variant="body2"
+                                    style={{
+                                        width: "90%"
+                                    }}
+                                    color="secondary"
+                                    noWrap
+                                >
                                     {fileContent(index).Body}
                                 </Typography>
                             </CardContent>

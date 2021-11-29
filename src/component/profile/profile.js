@@ -134,31 +134,60 @@ const Profile = ({isMobile, onHomeClick, onProjectClick, onBlogClick}) => {
                     justifyContent="space-evenly"
                     alignItems="center"
                 >
-                    <IconButton onClick={onHomeClick}>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' onClick={onHomeClick}>
+                    <IconButton
+                        onClick={onHomeClick}
+                    >
+                        <Typography
+                            fontSize="80%"
+                            fontWeight="Bold"
+                            color='secondary'
+                            onClick={onHomeClick}
+                        >
                             Home
                         </Typography>
                     </IconButton>
                     {
                         isMobile ?
-                        <IconButton onClick={onBlogClick}>
-                            <Typography fontSize="80%" fontWeight="Bold" color='secondary' onClick={onBlogClick}>
-                                Blogs
-                            </Typography>
-                        </IconButton> : ""
+                            <IconButton
+                                onClick={onBlogClick}
+                            >
+                                <Typography
+                                    fontSize="80%"
+                                    fontWeight="Bold"
+                                    color='secondary'
+                                    onClick={onBlogClick}
+                                >
+                                    Blogs
+                                </Typography>
+                            </IconButton> : ""
                     }
-                    <IconButton onClick={onProjectClick}>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' onClick={onProjectClick}>
+                    <IconButton
+                        onClick={onProjectClick}
+                    >
+                        <Typography
+                            fontSize="80%"
+                            fontWeight="Bold"
+                            color='secondary'
+                            onClick={onProjectClick}
+                        >
                             Project
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary'>
+                        <Typography
+                            fontSize="80%"
+                            fontWeight="Bold"
+                            color='secondary'
+                        >
                             Resume
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary'>
+                        <Typography
+                            fontSize="80%"
+                            fontWeight="Bold"
+                            color='secondary'
+                        >
                             About
                         </Typography>
                     </IconButton>
