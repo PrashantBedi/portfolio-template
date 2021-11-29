@@ -41,11 +41,11 @@ const Blogs = ({isMobile, theme}) => {
                             />
                             <CardContent>
                                 <Typography fontWeight="bold" variant="h6" id={index} style={{width: "90%"}}
-                                            fontFamily="Lato" color="secondary" noWrap>
+                                            color="secondary" noWrap>
                                     {fileContent(index).Title}
                                 </Typography>
                                 <Typography gutterBottom fontSize="10" variant="body2" style={{width: "90%"}}
-                                            fontFamily="Lato" color="secondary" noWrap>
+                                            color="secondary" noWrap>
                                     {fileContent(index).Body}
                                 </Typography>
                             </CardContent>

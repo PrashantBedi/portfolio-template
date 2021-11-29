@@ -9,8 +9,20 @@ import cfg from "./config";
 import Blogs from "./component/blogs/blogs";
 import resize from "./AppHooks"
 import {LIGHT_THEME} from "./constants";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import Projects from "./component/project/project";
+
+const onHomeClick = () => {
+    return <Navigate to='/'/>
+}
+
+const onProjectClick = () => {
+    return <Navigate to='/project'/>
+}
+
+const onBlogClick = () => {
+    return <Navigate to='/blog'/>
+}
 
 function App() {
     const {isMobile, theme, toggleTheme} = resize()
@@ -18,9 +30,23 @@ function App() {
     const mobileRoutes = () => {
         return <Router>
             <Routes>
-                <Route path="/" element={<Profile isMobile={isMobile}/>}/>
-                <Route path="/blogs" element={<Blogs isMobile={isMobile} theme={theme}/>}/>
-                <Route path="/project" element={<Projects isMobile={isMobile} theme={theme}/>}/>
+                <Route path="/"
+                       element={<Profile isMobile={isMobile}
+                                         onBlogClick={onBlogClick}
+                                         onHomeClick={onHomeClick}
+                                         onProjectClick={onProjectClick}
+                       />}
+                />
+                <Route path="/blogs"
+                       element={<Blogs isMobile={isMobile}
+                                       theme={theme}
+                       />}
+                />
+                <Route path="/project"
+                       element={<Projects isMobile={isMobile}
+                                          theme={theme}
+                       />}
+                />
                 <Route path="/about"/>
             </Routes>
         </Router>
@@ -29,8 +55,16 @@ function App() {
     const otherRoutes = () => {
         return <Router>
             <Routes>
-                <Route path="/" element={<Blogs isMobile={isMobile} theme={theme}/>}/>
-                <Route path="/project" element={<Projects isMobile={isMobile} theme={theme}/>}/>
+                <Route path="/"
+                       element={<Blogs isMobile={isMobile}
+                                       theme={theme}
+                       />}
+                />
+                <Route path="/project"
+                       element={<Projects isMobile={isMobile}
+                                          theme={theme}
+                       />}
+                />
                 <Route path="/about"/>
             </Routes>
         </Router>
@@ -42,8 +76,8 @@ function App() {
                 <Helmet>
                     <title>{cfg.title}</title>
                 </Helmet>
-                <AppBar theme={theme} toggleTheme={toggleTheme}/>
-                {/*<marquee>This site is under construction</marquee>*/}
+                <AppBar theme={theme} toggleTheme={toggleTheme} onHomeClick={onHomeClick}/>
+                <marquee>This site is under construction</marquee>
                 {
                     isMobile ? mobileRoutes() :
                         <React.Fragment>
@@ -54,7 +88,8 @@ function App() {
                                 alignItems="flex-start"
                             >
                                 {otherRoutes()}
-                                <Profile isMobile={isMobile}/>
+                                <Profile isMobile={isMobile} onBlogClick={onBlogClick} onHomeClick={onHomeClick}
+                                         onProjectClick={onProjectClick}/>
                             </Grid>
                         </React.Fragment>
                 }

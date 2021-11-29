@@ -8,21 +8,8 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import cfg from "../../config"
-import { Navigate } from 'react-router-dom';
 
-const onHomeClick = () => {
-    return <Navigate to='/' />
-}
-
-const onProjectClick = () => {
-    return <Navigate to='/project' />
-}
-
-const onBlogClick = () => {
-    return <Navigate to='/blog' />
-}
-
-const Profile = ({isMobile}) => {
+const Profile = ({isMobile, onHomeClick, onProjectClick, onBlogClick}) => {
     return (
         <Box
             width={isMobile ? "100%" : "30%"}
@@ -129,7 +116,7 @@ const Profile = ({isMobile}) => {
                         : ""
                 }
                 </Grid>
-                <Typography margin="1% 0" fontSize="110%" color='secondary' fontFamily="Lato">
+                <Typography margin="1% 0" fontSize="110%" color='secondary'>
                     {
                         cfg.description
                             .map(
@@ -147,31 +134,31 @@ const Profile = ({isMobile}) => {
                     justifyContent="space-evenly"
                     alignItems="center"
                 >
-                    <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato" onClick={onHomeClick}>
+                    <IconButton onClick={onHomeClick}>
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' onClick={onHomeClick}>
                             Home
                         </Typography>
                     </IconButton>
                     {
                         isMobile ?
-                        <IconButton>
-                            <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato" onClick={onBlogClick}>
+                        <IconButton onClick={onBlogClick}>
+                            <Typography fontSize="80%" fontWeight="Bold" color='secondary' onClick={onBlogClick}>
                                 Blogs
                             </Typography>
                         </IconButton> : ""
                     }
-                    <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato" onClick={onProjectClick}>
+                    <IconButton onClick={onProjectClick}>
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' onClick={onProjectClick}>
                             Project
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary'>
                             Resume
                         </Typography>
                     </IconButton>
                     <IconButton>
-                        <Typography fontSize="80%" fontWeight="Bold" color='secondary' fontFamily="Lato">
+                        <Typography fontSize="80%" fontWeight="Bold" color='secondary'>
                             About
                         </Typography>
                     </IconButton>
@@ -179,7 +166,6 @@ const Profile = ({isMobile}) => {
                 <Typography
                     fontSize="50%"
                     fontStyle="italic"
-                    fontFamily="Lato"
                     color="secondary"
                 >
                     Designed and Build by Prashant Bedi

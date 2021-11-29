@@ -20,6 +20,11 @@ export const lightTheme = createTheme({
                 default: '#f0f0f0',
         },
     },
+    typography: {
+        fontFamily: [
+            'Lato'
+        ]
+    }
 });
 
 export const darkTheme = createTheme({

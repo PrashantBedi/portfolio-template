@@ -47,15 +47,15 @@ const Projects = ({isMobile, theme}) => {
                                 />
                                 <CardContent>
                                     <Typography fontWeight="bold" variant="h6" id={index} style={{width: "90%"}}
-                                                fontFamily="Lato" color="secondary" noWrap>
+                                                color="secondary" noWrap>
                                         {project.title}
                                     </Typography>
                                     <Typography gutterBottom variant="body2" fontStyle='italic' style={{width: "90%"}}
-                                                fontFamily="Lato" color="secondary" noWrap>
+                                                color="secondary" noWrap>
                                         {project.duration}
                                     </Typography>
                                     <Typography gutterBottom fontWeight='medium' variant="body2" style={{width: "90%"}}
-                                                fontFamily="Lato" color="secondary" noWrap>
+                                                color="secondary" noWrap>
                                         {project.description}
                                     </Typography>
                                 </CardContent>

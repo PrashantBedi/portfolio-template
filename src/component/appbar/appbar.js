@@ -9,7 +9,7 @@ import {Grid, IconButton} from "@mui/material";
 import {DARK_THEME} from "../../constants";
 import cfg from "../../config";
 
-const CustomAppBar = ({theme, toggleTheme}) => {
+const CustomAppBar = ({theme, toggleTheme, onHomeClick}) => {
 
     return (
         <Box sx={{flexGrow: 1}}>
@@ -23,12 +23,12 @@ const CustomAppBar = ({theme, toggleTheme}) => {
                     >
                         <IconButton
                             color="inherit"
+                            onClick={onHomeClick}
                         >
                             <Typography
                                 fontWeight="bold"
                                 variant="h5"
                                 sx={{flexGrow: 1}}
-                                fontFamily="Lato"
                             >
                                 {cfg.name}
                             </Typography>
