@@ -4,10 +4,10 @@ import Projects from "../projects/Projects";
 import Blogs from "../Blogs/Blogs";
 import About from "../About/About";
 
-function Routing() {
+function Routing({isMobile}) {
     return (
         <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Home isMobile={isMobile}/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/blogs" element={<Blogs/>}/>
             <Route path="/about" element={<About/>}/>

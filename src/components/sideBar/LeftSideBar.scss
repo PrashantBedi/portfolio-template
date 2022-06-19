@@ -10,6 +10,20 @@
   margin: 25% 0;
 }
 
+.sideBarMobile {
+  position: fixed;
+  box-shadow: 10px 10px 8px $shadow;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 7vh;
+  width: 100%;
+  background: $navbarLeft;
+}
+
 .sideBarLeft {
   position: fixed;
   box-shadow: 10px 10px 8px $shadow;
