@@ -1,9 +1,9 @@
 const cfg = {
     "title": "Prashant's Wiki", //title of the window tab
     "name": "PrashantBedi", //name of website
-    "imageURL": "https://lh3.googleusercontent.com/pw/AM-JKLWOcNZYiE-dkDbA77xlByTjkUdr0lVuPDjeQ-rdgrJkq-a" +
-        "0LoP5ytf18eYFJPs9VghNHdGoGkF_tK0etylH_aEb5KKAHdXSeuP1LfPkgCTkOx6wk9NSq6GCLtHjjYhmcx9Z_y5qyS9jHvF" +
-        "3aakc6yn2=w3124-h2082-no?authuser=0", //your image url
+    "imageURL": "https://lh3.googleusercontent.com/pw/AM-JKLWkNjHdlwf4XAG-3q0Clk-xUq03_w9GcCdAXct0T-pj4VamRsECMN" +
+        "s2SkyX2cYE8A24SSU7J5ETaqUSfCGl-zHVqU3T7YN5zmBwyNJUnB2f_l-nMn1yDYqXHiWU-DUOhFlNKRul_tQ9wchdCF1XF03H=w840-" +
+        "h1090-no?authuser=0", //your image url
     "description": [ //description about you
         "I am a software developer interested in physics, gaming and tech. " +
         "I like to explore the depths of universe and how it works. A big fan of Nikola Tesla and the Einsteins " +
