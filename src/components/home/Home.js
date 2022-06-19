@@ -4,10 +4,10 @@ import cfg from "../../config"
 function Home({isMobile}) {
     return (
         <div className="home">
-            <div className="hello">
+            <div className={isMobile ? "helloMobile" : "hello"}>
                 <h1><span id="text"/></h1>
             </div>
-            <div className="image">
+            <div className={isMobile ? "imageMobile" : "image"}>
                 <img src={cfg.imageURL} alt="Not Loaded"/>
             </div>
             <div className={isMobile ? "descriptionHomeMobile" : "descriptionHome"}>

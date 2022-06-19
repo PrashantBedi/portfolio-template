@@ -10,7 +10,7 @@ function App() {
 
     return (
         <div
-            className="box">
+            className="app">
             <BrowserRouter>
                 <NavigationBar isMobile={isMobile}/>
                 <SocialBar isMobile={isMobile}/>
