@@ -1,6 +1,6 @@
 @import "../../scss/variables";
 
-.nav-icon-left{
+.navigationText{
   color: $text;
   text-align: center;
   white-space: nowrap;
@@ -10,9 +10,8 @@
   margin: 25% 0;
 }
 
-.sideBarMobile {
+.navigationBarMobile {
   position: fixed;
-  box-shadow: 10px 10px 8px $shadow;
   top: 0;
   z-index: 50;
   display: flex;
@@ -24,7 +23,7 @@
   background: $navbarLeft;
 }
 
-.sideBarLeft {
+.navigationBar {
   position: fixed;
   box-shadow: 10px 10px 8px $shadow;
   left: 0;

@@ -1,6 +1,6 @@
-@import "../../scss/variables";
+@import "src/scss/variables";
 
-.nav-icon-right{
+.socialBarIcon{
   color: $text;
   text-align: center;
   white-space: nowrap;
@@ -10,7 +10,7 @@
   margin: 25% 0;
 }
 
-.sideBarRight {
+.socialBar {
   position: fixed;
   box-shadow: 10px 10px 8px $shadow;
   right: 0;
@@ -25,7 +25,7 @@
   background: $navbarRight;
 }
 
-.sideBarRightMobile {
+.socialBarMobile {
   position: fixed;
   box-shadow: 10px 10px 8px $shadow;
   bottom: 0;

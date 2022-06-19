@@ -1,8 +1,8 @@
 import {Route, Routes} from "react-router-dom";
 import Home from "../home/Home";
 import Projects from "../projects/Projects";
-import Blogs from "../Blogs/Blogs";
-import About from "../About/About";
+import Blogs from "../blogs/Blogs";
+import About from "../about/About";
 
 function Routing({isMobile}) {
     return (

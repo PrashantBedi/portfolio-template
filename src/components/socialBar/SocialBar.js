@@ -1,4 +1,4 @@
-import "./RightSideBar.scss"
+import "./SocialBar.scss"
 import cfg from "../../config"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
@@ -11,10 +11,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
-function RightSideBar({isMobile}) {
+function SocialBar({isMobile}) {
 
     return (
-        <nav className={isMobile ? "sideBarRightMobile" : "sideBarRight"}>
+        <nav className={isMobile ? "socialBarMobile" : "socialBar"}>
             { cfg.socials.github === "" ? "" :
                 <a
                     href={cfg.socials.github}
@@ -74,4 +74,4 @@ function RightSideBar({isMobile}) {
     )
 }
 
-export default RightSideBar
+export default SocialBar

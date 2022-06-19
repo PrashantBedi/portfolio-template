@@ -1,8 +1,8 @@
 import "./App.scss"
 import {BrowserRouter} from "react-router-dom";
-import LeftSideBar from "./components/sideBar/LeftSideBar";
+import NavigationBar from "./components/navigationBar/NavigationBar";
 import Routing from "./components/routing/Routing";
-import RightSideBar from "./components/sideBar/RightSideBar";
+import SocialBar from "./components/socialBar/SocialBar";
 import size from "./AppHooks"
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
         <div
             className="box">
             <BrowserRouter>
-                <LeftSideBar isMobile={isMobile}/>
-                <RightSideBar isMobile={isMobile}/>
+                <NavigationBar isMobile={isMobile}/>
+                <SocialBar isMobile={isMobile}/>
                 <Routing isMobile={isMobile}/>
             </BrowserRouter>
         </div>
