@@ -9,6 +9,7 @@ import {
     faGithub,
     faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
 function RightSideBar() {
 
@@ -30,14 +31,14 @@ function RightSideBar() {
                     <FontAwesomeIcon icon={faLinkedinIn} size="3x"/>
                 </a>
             }
-            {/*{ cfg.socials.email === "" ? "" :*/}
-            {/*    <a*/}
-            {/*        href={cfg.socials.email}*/}
-            {/*        className="linkedin social"*/}
-            {/*    >*/}
-            {/*        <FontAwesomeIcon icon={faMailchimp} size="3x"/>*/}
-            {/*    </a>*/}
-            {/*}*/}
+            { cfg.socials.email === "" ? "" :
+                <a
+                    href={"mailto:" + cfg.socials.email}
+                    className="envelope social"
+                >
+                    <FontAwesomeIcon icon={faEnvelope} size="3x"/>
+                </a>
+            }
             { cfg.socials.youtube === "" ? "" :
                 <a
                     href={cfg.socials.youtube}
