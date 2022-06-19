@@ -1,9 +1,9 @@
 const cfg = {
     "title": "Prashant's Wiki", //title of the window tab
     "name": "PrashantBedi", //name of website
-    "imageURL": "https://lh3.googleusercontent.com/pw/AM-JKLXwFUe8glrcm4Xr3ibYp1lKGvu9LZVNOkSsw130_bcA7q" +
-        "iQn829LMSasQJmjN6D7cU1BNJ4mISBJgxN9Yvf-dbCtkH6Ozq47wXZkVHcKlrA_a1uuYxKSbQMLuWVaxnj7w1OB7ym6om_z" +
-        "_G9VW6yHvVo=w822-h1078-no?authuser=0", //your image url
+    "imageURL": "https://lh3.googleusercontent.com/pw/AM-JKLWOcNZYiE-dkDbA77xlByTjkUdr0lVuPDjeQ-rdgrJkq-a" +
+        "0LoP5ytf18eYFJPs9VghNHdGoGkF_tK0etylH_aEb5KKAHdXSeuP1LfPkgCTkOx6wk9NSq6GCLtHjjYhmcx9Z_y5qyS9jHvF" +
+        "3aakc6yn2=w3124-h2082-no?authuser=0", //your image url
     "description": [ //description about you
         "I am a software developer interested in physics, gaming and tech. " +
         "I like to explore the depths of universe and how it works. A big fan of Nikola Tesla and the Einsteins " +
@@ -29,7 +29,8 @@ const cfg = {
             "description": "A template in react to create a portfolio website"
         },
     ],
-    "resume": "https://drive.google.com/uc?export=download&id=1NVUwpCrCBgX2stiDiG40ikU01Gtdz3I4",
+    "resume": "https://drive.google.com/uc?export=download&id=" +
+        "1NVUwpCrCBgX2stiDiG40ikU01Gtdz3I4",
     //This is downloadable link for google drive file. You can create yours by replacing the file id in url
 }
 
