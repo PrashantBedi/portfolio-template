@@ -15,7 +15,7 @@ export default () => {
         }
     }, []);
 
-    let isMobile = (width <= 768);
+    let isMobile = (width <= 800);
 
     return {
         isMobile: isMobile,

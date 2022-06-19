@@ -20,7 +20,7 @@ function SocialBar({isMobile}) {
                     href={cfg.socials.github}
                     className="github social"
                 >
-                    <FontAwesomeIcon icon={faGithub} size={isMobile ? "2x" : "3x"}/>
+                    <FontAwesomeIcon icon={faGithub} size="2x"/>
                 </a>
             }
             { cfg.socials.linkedin === "" ? "" :
@@ -28,7 +28,7 @@ function SocialBar({isMobile}) {
                     href={cfg.socials.linkedin}
                     className="linkedin social"
                 >
-                    <FontAwesomeIcon icon={faLinkedinIn} size={isMobile ? "2x" : "3x"}/>
+                    <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
                 </a>
             }
             { cfg.socials.email === "" ? "" :
@@ -36,7 +36,7 @@ function SocialBar({isMobile}) {
                     href={"mailto:" + cfg.socials.email}
                     className="envelope social"
                 >
-                    <FontAwesomeIcon icon={faEnvelope} size={isMobile ? "2x" : "3x"}/>
+                    <FontAwesomeIcon icon={faEnvelope} size="2x"/>
                 </a>
             }
             { cfg.socials.youtube === "" ? "" :
@@ -44,7 +44,7 @@ function SocialBar({isMobile}) {
                     href={cfg.socials.youtube}
                     className="youtube social"
                 >
-                    <FontAwesomeIcon icon={faYoutube} size={isMobile ? "2x" : "3x"}/>
+                    <FontAwesomeIcon icon={faYoutube} size="2x"/>
                 </a>
             }
             {cfg.socials.facebook === "" ? "" :
@@ -52,7 +52,7 @@ function SocialBar({isMobile}) {
                     href={cfg.socials.facebook}
                     className="facebook social"
                 >
-                    <FontAwesomeIcon icon={faFacebook} size={isMobile ? "2x" : "3x"}/>
+                    <FontAwesomeIcon icon={faFacebook} size="2x"/>
                 </a>
             }
             {cfg.socials.instagram === "" ? "" :
@@ -60,14 +60,14 @@ function SocialBar({isMobile}) {
                     href={cfg.socials.instagram}
                     className="instagram social"
                 >
-                    <FontAwesomeIcon icon={faInstagram} size={isMobile ? "2x" : "3x"}/>
+                    <FontAwesomeIcon icon={faInstagram} size="2x"/>
                 </a>
             }
             {cfg.socials.twitter === "" ? "" :
                 <a href={cfg.socials.twitter}
                    className="twitter social"
                 >
-                    <FontAwesomeIcon icon={faTwitter} size={isMobile ? "2x" : "3x"}/>
+                    <FontAwesomeIcon icon={faTwitter} size="2x"/>
                 </a>
             }
         </nav>
