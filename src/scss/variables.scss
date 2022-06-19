@@ -1,0 +1,34 @@
+$primary: #0caadc;
+$secondary: #db730b;
+
+$border-color: #e0e0e0;
+$shadow: #474444;
+$success: #4caf50;
+$warning: #ff9800;
+$error: #f44336;
+$info: #31e5fd;
+$text: rgb(243, 229, 229);
+
+$backgroundHome: #52758b;
+$backgroundProject: #469273;
+$backgroundBlog: #a87242;
+$backgroundAbout: #5e467b;
+
+$navbarLeft: #473f3f;
+$navbarRight: #c1b3b3;
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "error": $error,
+        "backgroundHome": $backgroundHome,
+        "backgroundProject": $backgroundProject,
+        "backgroundBlog": $backgroundBlog,
+        "backgroundAbout": $backgroundAbout,
+        "navbarLeft": $navbarLeft,
+        "navbarRight": $navbarRight,
+        "shadow": $shadow,
+);

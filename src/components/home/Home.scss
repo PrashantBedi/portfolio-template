@@ -1,0 +1,58 @@
+@import "../../scss/variables";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  color: $text;
+  background: $backgroundHome;
+  animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.hello {
+  font-size: 40px;
+  margin: 1%;
+}
+
+#text:after {
+  content: "";
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    content: "Hello!";
+  }
+  20% {
+    content: "Namaste!";
+  }
+  40% {
+    content: "Hola!";
+  }
+  60% {
+    content: "Bonjour!";
+  }
+  80% {
+    content: "Salve!";
+  }
+  100% {
+    content: "Hello!";
+  }
+}
+
+.descriptionHome {
+  width: 70%;
+  font-size: 20px;
+  font-style: italic;
+}

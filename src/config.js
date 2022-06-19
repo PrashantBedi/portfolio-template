@@ -5,7 +5,6 @@ const cfg = {
         "iQn829LMSasQJmjN6D7cU1BNJ4mISBJgxN9Yvf-dbCtkH6Ozq47wXZkVHcKlrA_a1uuYxKSbQMLuWVaxnj7w1OB7ym6om_z" +
         "_G9VW6yHvVo=w822-h1078-no?authuser=0", //your image url
     "description": [ //description about you
-        "Hey everyone!",
         "I am a software developer interested in physics, gaming and tech. " +
         "I like to explore the depths of universe and how it works. A big fan of Nikola Tesla and the Einsteins " +
         "'Theory of Relativity'"
@@ -13,10 +12,11 @@ const cfg = {
     "socials": { //keep value "" to hide a social from ui
         "github": "https://www.github.com/Prashant2411",
         "linkedin": "https://www.linkedin.com/in/prashant-bedi-620738178",
-        "instagram": "https://www.instagram.com/p_bedi_21/",
+        "instagram": "https://www.instagram.com/_mr.psycho_21_/",
         "email": "prashantbedi241197@gmail.com",
         "youtube": "https://www.youtube.com/channel/UCjoExLiPcSXkNYAtpe-OBdg",
-        "facebook": "" // value hides facebook icon from ui
+        "facebook": "", // value hides facebook icon from ui
+        "twitter": "https://twitter.com/p_bedi_21"
     },
     "projects": [
         {

@@ -1,0 +1,26 @@
+@import "../../scss/variables";
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  color: $text;
+  background: $backgroundProject;
+  animation: 2s ease-out 0s 1 slideInFromDown;
+}
+
+@keyframes slideInFromDown {
+0% {
+  transform: translateY(100%);
+}
+100% {
+  transform: translateY(0);
+}
+}
+
+.projectsTitle {
+  font-size: 40px;
+  margin: 2%;
+}

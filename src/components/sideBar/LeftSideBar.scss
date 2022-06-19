@@ -1,0 +1,25 @@
+@import "../../scss/variables";
+
+.nav-icon-left{
+  color: $text;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 120%;
+  margin: 25% 0;
+}
+
+.sideBarLeft {
+  position: fixed;
+  box-shadow: 10px 10px 8px $shadow;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+  width: 7%;
+  background: $navbarLeft;
+}
