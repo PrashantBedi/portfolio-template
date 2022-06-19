@@ -1,5 +1,7 @@
 import "./NavigationBar.scss"
 import {Link} from "react-router-dom";
+import cfg from "../../config"
+
 
 function NavigationBar({isMobile}) {
 
@@ -9,7 +11,7 @@ function NavigationBar({isMobile}) {
             <Link to="/projects" className="navigationText">Projects</Link>
             <Link to="/blogs" className="navigationText">Blogs</Link>
             <Link to="/about" className="navigationText">About</Link>
-            <Link to="/resume" className="navigationText">Resume</Link>
+            <a href={cfg.resume} className="navigationText" download>Resume</a>
         </nav>
     )
 }

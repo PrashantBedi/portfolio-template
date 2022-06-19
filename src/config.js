@@ -28,7 +28,9 @@ const cfg = {
             "duration": "1 months",
             "description": "A template in react to create a portfolio website"
         },
-    ]
+    ],
+    "resume": "https://drive.google.com/uc?export=download&id=1NVUwpCrCBgX2stiDiG40ikU01Gtdz3I4",
+    //This is downloadable link for google drive file. You can create yours by replacing the file id in url
 }
 
 export default cfg
