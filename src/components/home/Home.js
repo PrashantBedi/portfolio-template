@@ -7,6 +7,9 @@ function Home({isMobile}) {
             <div className="hello">
                 <h1><span id="text"/></h1>
             </div>
+            <div className="image">
+                <img src={cfg.imageURL} alt="Not Loaded"/>
+            </div>
             <div className={isMobile ? "descriptionHomeMobile" : "descriptionHome"}>
                 <h3>{cfg.description}</h3>
             </div>

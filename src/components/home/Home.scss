@@ -51,14 +51,37 @@
   }
 }
 
+.image img{
+  box-shadow: 15px 15px 8px $shadow;
+  z-index: 50;
+  width: auto;
+  height: 50vh;
+  object-fit: fill;
+  overflow: hidden;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .descriptionHome {
   width: 70%;
+  margin: 1%;
   font-size: 20px;
   font-style: italic;
 }
 
 .descriptionHomeMobile {
   width: 90%;
+  margin: 1%;
   font-size: 20px;
   font-style: italic;
 }
