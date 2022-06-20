@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: inherit;
+  max-height: inherit;
   color: $text;
   background: $backgroundBlog;
   animation: 1s ease-out 0s 1 slideInFromTop;

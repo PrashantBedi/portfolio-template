@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 150vh;
+  min-height: inherit;
+  max-height: inherit;
   color: $text;
   background: $backgroundAbout;
   padding-left: 9%;

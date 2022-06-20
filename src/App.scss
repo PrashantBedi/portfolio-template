@@ -1,5 +1,7 @@
 @import "scss/variables";
 
 .app {
+  min-height: 100vh;
+  max-height: max-content;
   background: $background;
 }
