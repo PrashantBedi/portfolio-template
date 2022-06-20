@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.education {
+
+}
+
+.educationTitle {
+    font-style: oblique;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.education h3 {
+    font-size: 110%;
+    margin: 2% 0 0 0;
+}
+
+.education h6 {
+    margin: 0;
+}
+
+.education h5 {
+    margin: 0;
+    color: $text-secondary;
+}

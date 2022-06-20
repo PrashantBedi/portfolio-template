@@ -3,11 +3,12 @@
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: inherit;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 150vh;
   color: $text;
   background: $backgroundAbout;
+  padding-left: 9%;
   animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
@@ -20,7 +21,37 @@
   }
 }
 
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 150%;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 120%;
+}
+
+.section {
+  width: 40%;
+}
+
+.sectionMobile {
+    width: 90%;
+    display: flex;
+}
+
 .aboutTitle {
-  font-size: 40px;
-  margin: 2%;
+  font-size: 225%;
+}
+
+.aboutTitle h1{
+  margin-bottom: 0;
 }

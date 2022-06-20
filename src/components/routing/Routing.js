@@ -10,7 +10,7 @@ function Routing({isMobile}) {
             <Route path="/" element={<Home isMobile={isMobile}/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/blogs" element={<Blogs/>}/>
-            <Route path="/about" element={<About/>}/>
+            <Route path="/about" element={<About isMobile={isMobile}/>}/>
         </Routes>
     )
 }

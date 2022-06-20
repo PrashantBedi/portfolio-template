@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+
+.skills {
+  width: 100%;
+}
+
+.skillsTitle {
+  font-style: oblique;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.skillIconDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.skillIcon {
+  width: 15%;
+  height: auto;
+}
+
+.skillIconMobile {
+  width: 30%;
+  height: auto;
+}

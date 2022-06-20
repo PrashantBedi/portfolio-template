@@ -30,8 +30,69 @@ const cfg = {
         },
     ],
     "resume": "https://drive.google.com/uc?export=download&id=" +
-        "1NVUwpCrCBgX2stiDiG40ikU01Gtdz3I4",
-    //This is downloadable link for google drive file. You can create yours by replacing the file id in url
+        "1NVUwpCrCBgX2stiDiG40ikU01Gtdz3I4", //This is downloadable link for google drive file. You can create yours by replacing the file id in url
+    "education": [
+        {
+            "institution": "Chinmaya Vidhayalaya Tarapur",
+            "degree": "10th",
+            "major": "",
+            "graduationYear": "2012-2013",
+            "place": "Boisar, Maharashtra, India"
+        },
+        {
+            "institution": "Chinmaya Vidhayalaya Tarapur",
+            "degree": "12th",
+            "major": "Science",
+            "graduationYear": "2014-2015",
+            "place": "Boisar, Maharashtra, India"
+        },
+        {
+            "institution": "G.H Raisoni College of Engineering and Management",
+            "degree": "B.E",
+            "major": "Information Technology",
+            "graduationYear": "2015-2019",
+            "place": "Pune, Maharashtra, India"
+        }
+    ],
+    "skills": [
+        "java",
+        "go",
+        "react",
+        "aws",
+        "docker",
+        "kubernetes",
+        "shell",
+        "terraform",
+    ],
+    // {
+    //     "backend": [
+    //         "Java",
+    //         "Golang",
+    //     ],
+    //     "frontend": [
+    //         "HTML",
+    //         "CSS",
+    //         "JavaScript",
+    //         "React",
+    //     ],
+    //     "devOps": [
+    //         "Terraform",
+    //         "Terragrunt",
+    //         "Docker",
+    //         "Kubernetes",
+    //         "AWS",
+    //     ],
+    //     "database": [
+    //         "MySQL(Backend Intergration)",
+    //         "PostgreSQL(Backend Intergration)",
+    //     ],
+    //     "other": [
+    //         "Shell",
+    //         "Git",
+    //         "GitHub",
+    //         "Vulnerability Scanning",
+    //     ]
+    // }
 }
 
 export default cfg

@@ -5,9 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: inherit;
+  height: 100vh;
   color: $text;
   background: $backgroundHome;
+  font-family: "Droid Sans";
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -21,11 +22,11 @@
 }
 
 .hello {
-  font-size: 40px;
+  font-size: 225%;
 }
 
 .helloMobile {
-  font-size: 30px;
+  font-size: 180%;
 }
 
 #text:after {
@@ -58,7 +59,7 @@
   box-shadow: 15px 15px 8px $shadow;
   z-index: 50;
   width: auto;
-  height: 50vh;
+  height: 47vh;
   overflow: hidden;
   animation: fadeInAnimation ease 5s;
   animation-iteration-count: 1;
@@ -87,12 +88,12 @@
 
 .descriptionHome {
   width: 70%;
-  font-size: 20px;
+  font-size: 125%;
   font-style: italic;
 }
 
 .descriptionHomeMobile {
   width: 90%;
-  font-size: 17px;
+  font-size: 105%;
   font-style: italic;
 }

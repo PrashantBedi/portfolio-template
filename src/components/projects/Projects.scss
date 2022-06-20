@@ -5,9 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: inherit;
+  height: 100vh;
   color: $text;
   background: $backgroundProject;
+  font-family: "Droid Sans";
   animation: 1s ease-out 0s 1 slideInFromDown;
 }
 
@@ -21,6 +22,6 @@
 }
 
 .projectsTitle {
-  font-size: 40px;
+  font-size: 225%;
   margin: 2%;
 }
