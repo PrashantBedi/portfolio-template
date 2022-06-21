@@ -18,14 +18,11 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .skillIcon {
   width: 15%;
   height: auto;
-}
-
-.skillIconMobile {
-  width: 30%;
-  height: auto;
+  margin: 1%;
 }

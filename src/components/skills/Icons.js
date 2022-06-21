@@ -1,7 +1,7 @@
 import "./Skills.scss"
 
 function GetIcon(name) {
-    switch (name.item) {
+    switch (name.item.toLowerCase()) {
         case "java":
             return "https://img.icons8.com/color/240/undefined/java-coffee-cup-logo--v1.png";
         case "go":
@@ -14,9 +14,9 @@ function GetIcon(name) {
             return "https://img.icons8.com/fluency/240/undefined/docker.png";
         case "kubernetes":
             return "https://img.icons8.com/color/240/undefined/kubernetes.png";
-        case "shell":
-            return "https://img.icons8.com/color/240/undefined/terraform.png";
         case "terraform":
+            return "https://img.icons8.com/color/240/undefined/terraform.png";
+        case "shell":
             return "https://img.icons8.com/plasticine/200/undefined/bash.png";
         default:
             return "";

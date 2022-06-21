@@ -12,15 +12,15 @@ function About({isMobile}) {
                 <div className={isMobile ? "sectionMobile" : "section"}>
                     <Education/>
                 </div>
-                <div className="section">
-                    <Skills isMobile={isMobile}/>
+                <div className={isMobile ? "sectionMobile" : "section"}>
+                    <Skills/>
                 </div>
             </div>
             <div className={isMobile ? "column" : "row"}>
-                <div className="section">
+                <div className={isMobile ? "sectionMobile" : "section"}>
                     <h2 className="subHeading">Strengths</h2>
                 </div>
-                <div className="section">
+                <div className={isMobile ? "sectionMobile" : "section"}>
                     <h2 className="subHeading">Hobbies</h2>
                 </div>
             </div>

@@ -55,44 +55,17 @@ const cfg = {
         }
     ],
     "skills": [
-        "java",
-        "go",
-        "react",
-        "aws",
-        "docker",
-        "kubernetes",
-        "shell",
-        "terraform",
+        "Java",
+        "Go",
+        "React",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Shell",
+        "Terraform",
     ],
-    // {
-    //     "backend": [
-    //         "Java",
-    //         "Golang",
-    //     ],
-    //     "frontend": [
-    //         "HTML",
-    //         "CSS",
-    //         "JavaScript",
-    //         "React",
-    //     ],
-    //     "devOps": [
-    //         "Terraform",
-    //         "Terragrunt",
-    //         "Docker",
-    //         "Kubernetes",
-    //         "AWS",
-    //     ],
-    //     "database": [
-    //         "MySQL(Backend Intergration)",
-    //         "PostgreSQL(Backend Intergration)",
-    //     ],
-    //     "other": [
-    //         "Shell",
-    //         "Git",
-    //         "GitHub",
-    //         "Vulnerability Scanning",
-    //     ]
-    // }
+    "strengths": [],
+    "hobbies": [],
 }
 
 export default cfg
