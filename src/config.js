@@ -34,7 +34,7 @@ const cfg = {
             "repoUrl": "https://github.com/PrashantBedi/portfolio-template", // Repo URL of the project
             "description": "A template in react to create a portfolio website. Support blogs, projects, " +
                 "skills, resume and socials. Also supports mobile view. [Work in Progress]", // Description of the project
-            "demoUrl": "www.prashantbedi.dev", // Demo URL of the project
+            "demoUrl": "https://www.prashantbedi.dev", // Demo URL of the project
         },
     ],
     "resume": "https://drive.google.com/uc?export=download&id=" +
@@ -75,7 +75,7 @@ const cfg = {
     "strengths": [
         "Fast learner",
         "Easy adaptability to new tech",
-        "Logical Anaysis",
+        "Logical Analysis",
     ], // List down all your strengths
     "hobbies": [
         "Gaming",

@@ -23,10 +23,16 @@ function Projects({isMobile}) {
                                 </div>
                                 <div className="projectLink">
                                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                                        <i>Github</i>
+                                        {
+                                            project.repoUrl === "" ? "" :
+                                                <i>Repo</i>
+                                        }
                                     </a>
                                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                                        <i>Demo</i>
+                                        {
+                                            project.demoUrl === "" ? "" :
+                                                <i>Demo</i>
+                                        }
                                     </a>
                                 </div>
                             </div>
