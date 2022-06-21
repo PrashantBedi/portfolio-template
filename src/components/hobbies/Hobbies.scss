@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+
+.hobbies {
+  width: 100%;
+}
+
+.hobbiesTitle {
+  font-style: oblique;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hobbiesList {
+  margin: 0;
+  padding-left: 4%;
+}
+
+.hobbiesList li {
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+}

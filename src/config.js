@@ -64,8 +64,17 @@ const cfg = {
         "Shell",
         "Terraform",
     ],
-    "strengths": [],
-    "hobbies": [],
+    "strengths": [
+        "Fast learner",
+        "Easy adaptability to new tech",
+        "Logical Anaysis",
+    ],
+    "hobbies": [
+        "Gaming",
+        "Gym",
+        "Exploring Physics",
+        "Learning new things",
+    ],
 }
 
 export default cfg

@@ -1,6 +1,8 @@
 import "./About.scss"
 import Education from "../education/Education";
 import Skills from "../skills/Skills";
+import Strength from "../strength/Strength";
+import Hobbies from "../hobbies/Hobbies";
 
 function About({isMobile}) {
     return (
@@ -18,10 +20,10 @@ function About({isMobile}) {
             </div>
             <div className={isMobile ? "column" : "row"}>
                 <div className={isMobile ? "sectionMobile" : "section"}>
-                    <h2 className="subHeading">Strengths</h2>
+                    <Strength/>
                 </div>
                 <div className={isMobile ? "sectionMobile" : "section"}>
-                    <h2 className="subHeading">Hobbies</h2>
+                    <Hobbies/>
                 </div>
             </div>
         </div>

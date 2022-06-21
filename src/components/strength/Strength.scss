@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+
+.strength {
+  width: 100%;
+}
+
+.strengthTitle {
+  font-style: oblique;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.strengthList {
+  margin: 0;
+  padding-left: 4%;
+}
+
+.strengthList li {
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+}
