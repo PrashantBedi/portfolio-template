@@ -1,4 +1,5 @@
 const icons = {
+    // https://icons8.com/icons You can find all the icons here
     "java": "https://img.icons8.com/color/240/undefined/java-coffee-cup-logo--v1.png",
     "go": "https://img.icons8.com/color/240/undefined/golang.png",
     "react": "https://img.icons8.com/officel/240/undefined/react.png",

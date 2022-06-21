@@ -8,8 +8,8 @@ function Routing({isMobile}) {
     return (
         <Routes>
             <Route path="/" element={<Home isMobile={isMobile}/>}/>
-            <Route path="/projects" element={<Projects/>}/>
-            <Route path="/blogs" element={<Blogs/>}/>
+            <Route path="/projects" element={<Projects isMobile={isMobile}/>}/>
+            <Route path="/blogs" element={<Blogs isMobile={isMobile}/>}/>
             <Route path="/about" element={<About isMobile={isMobile}/>}/>
         </Routes>
     )
