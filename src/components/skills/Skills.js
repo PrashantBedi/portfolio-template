@@ -1,6 +1,6 @@
 import "./Skills.scss";
 import cfg from "../../config";
-import GetIcon from "./Icons";
+import icons from "../../icons";
 
 function Skills() {
     return (
@@ -8,7 +8,9 @@ function Skills() {
             <h2 className="skillsTitle">Skills</h2>
             <div className="skillIconDiv">
                 {
-                    cfg.skills.map((item) => <img src={GetIcon({item})} alt={item} className="skillIcon" title={item}/>)
+                    cfg.skills.map((item) =>
+                        <img src={icons[{item}.item.toLowerCase()]} alt={item} className="skillIcon" title={item}/>
+                    )
                 }
             </div>
         </div>
