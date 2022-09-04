@@ -3,6 +3,7 @@ import Home from "../home/Home";
 import Projects from "../projects/Projects";
 import Blogs from "../blogs/Blogs";
 import About from "../about/About";
+import Experience from "../experience/Experience";
 
 function Routing({isMobile}) {
     return (
@@ -11,6 +12,7 @@ function Routing({isMobile}) {
             <Route path="/projects" element={<Projects isMobile={isMobile}/>}/>
             <Route path="/blogs" element={<Blogs isMobile={isMobile}/>}/>
             <Route path="/about" element={<About isMobile={isMobile}/>}/>
+            <Route path="/experience" element={<Experience isMobile={isMobile}/>}/>
         </Routes>
     )
 }
