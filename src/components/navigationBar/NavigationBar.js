@@ -12,7 +12,6 @@ function NavigationBar({isMobile}) {
             <Link to="/blogs" className="navigationText">Blogs</Link>
             <Link to="/about" className="navigationText">About</Link>
             <Link to="/experience" className="navigationText">Experience</Link>
-            <a href={cfg.resume} className="navigationText" download>Resume</a>
         </nav>
     )
 }

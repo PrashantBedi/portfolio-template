@@ -21,23 +21,15 @@ const cfg = {
     "projects": [
         {
             "title": "Template Portfolio", // title of the project
-            "imageUrl": "https://lh3.googleusercontent.com/o3bOv3z7-B2Z1p5YXxRAu0P50Nbcrf4DnuZKesE6FbDYj5MEnkhoL5cmQuq" +
-                "H4gaSYZo9L-6W_72fnpWjHOmUO7v4fbt4aCN1Gj99jErUhY-fy2no6jCq_dxkEBcZkQySpDvIaGnFLDgX0z1CXtm0dmV5-C541DnP" +
-                "-W-qB-pHcWqZ0HbIZiZ1VO_kY0JCh2uOvcN8GhCQdxIGAXeZiSwfQr7DaWkUvoWi2yqBtCDW2b48dNvOVk-WSSxcc3Y8D-jnesKcv" +
-                "0glUNpQZgNmVDbAJO2v5y0DxUDdiioGa-X8_Y5UFlyBJ-7SlVJMaRCBpT6ERz3TWXz5vwTWf-kMH_JyXS7Hg-CjZF6wtdEwLa7qJ8" +
-                "phRMbnJpwEDIY6iKCEUyTAp-cjjGZ7lzptKkAB-CvXL_mEFzJJtg_UzeS6FjnJYKajEjHCOQ4U-q88gCVa_7Km4-NNcowiILzHamd" +
-                "132ynh7v2T3L3Upe0sItAGD7twPklfJZckwd8-Qai3jUIIx950INyDKyhVapnbDRofdForKC7WW_2xgGhQLD5w4waxdTIqjHozjf" +
-                "OD2I7Nd0a2bUOBsrsVCOmUvjA2Um35JWtWsZzXjq7KZt_GDiwQwsgm_-0d44zrgCiclA9rpJhSLRoyOprnd_yc4Qg1sJimVUc1QH" +
-                "Ml7finBl3iRELeFWflgXRDYXU6xVYfvEnOrWMBqOiec9ckJfI9Pa0E9dVGNtjYs8BXr9VdE7wqnXhLH_x54XFpsKvBSSPYZbEPTgL_w" +
-                "=w1912-h963-no?authuser=0", // Image URL of the project
+            "imageUrl": "https://lh3.googleusercontent.com/pw/AL9nZEX4PgidnCQjEEN7GiyKma6uDrvs6SA9ETJZ9jdh2b3r75KJ" +
+                "MnWwv3-Z3j27kkFw4_qeHIidAZIj2Vaz_VYk2Sxt3i0CelqDvytD4OUax6dd2QuuTHX6B5Ht3gNyLoaO5GrR8QfptlO0m8n1D" +
+                "i6b8AMV=w1912-h963-no?authuser=0", // Image URL of the project
             "repoUrl": "https://github.com/PrashantBedi/portfolio-template", // Repo URL of the project
             "description": "A template in react to create a portfolio website. Support blogs, projects, " +
                 "skills, resume and socials. Also supports mobile view. [Work in Progress]", // Description of the project
             "demoUrl": "https://www.prashantbedi.dev", // Demo URL of the project
         },
     ],
-    "resume": "https://drive.google.com/uc?export=download&id=" +
-        "1NVUwpCrCBgX2stiDiG40ikU01Gtdz3I4", //This is downloadable link for google drive file. You can create yours by replacing the file id in url
     "education": [
         {
             "institution": "Chinmaya Vidhayalaya Tarapur", //Institution name
@@ -106,7 +98,7 @@ const cfg = {
             "orgName": "BridgeLabz",
             "position": "Trainee",
             "duration": "6 months",
-            "description": ["learned about basics of clean coding and best practices to be followed",
+            "description": ["Learned about basics of clean coding and best practices to be followed",
                 "Took training on developing web app using react js, java and postgresql",
                 "Created a book store application to sell books online",
             ]
