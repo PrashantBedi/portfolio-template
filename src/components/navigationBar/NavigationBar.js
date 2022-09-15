@@ -1,6 +1,5 @@
 import "./NavigationBar.scss"
 import {Link} from "react-router-dom";
-import cfg from "../../config"
 
 
 function NavigationBar({isMobile}) {
