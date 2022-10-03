@@ -103,6 +103,19 @@ const cfg = {
                 "Created a book store application to sell books online",
             ]
         }
+    ],
+    "blogs": [
+        {
+            "image": "image",
+            "url": "url",
+            "topic": "Signing APK with JKS"
+        },
+        {
+          "image": "image",
+          "url": "url",
+          "topic": "Topic"
+        },
+
     ]
 }
 
