@@ -31,26 +31,33 @@ const cfg = {
         },
     ],
     "education": [
-        {
-            "institution": "Chinmaya Vidhayalaya Tarapur", //Institution name
-            "degree": "10th", //Degree name
-            "major": "", //Major name if any
-            "graduationYear": "2012-2013", //Graduation year
-            "place": "Boisar, Maharashtra, India" //Place of study
-        },
-        {
-            "institution": "Chinmaya Vidhayalaya Tarapur",
-            "degree": "12th",
-            "major": "Science",
-            "graduationYear": "2014-2015",
-            "place": "Boisar, Maharashtra, India"
-        },
+        // {
+        //     "institution": "Chinmaya Vidhayalaya Tarapur", //Institution name
+        //     "degree": "10th", //Degree name
+        //     "major": "", //Major name if any
+        //     "graduationYear": "2012-2013", //Graduation year
+        //     "place": "Boisar, Maharashtra, India" //Place of study
+        // },
+        // {
+        //     "institution": "Chinmaya Vidhayalaya Tarapur",
+        //     "degree": "12th",
+        //     "major": "Science",
+        //     "graduationYear": "2014-2015",
+        //     "place": "Boisar, Maharashtra, India"
+        // },
         {
             "institution": "G.H Raisoni College of Engineering and Management",
             "degree": "B.E",
             "major": "Information Technology",
             "graduationYear": "2015-2019",
             "place": "Pune, Maharashtra, India"
+        },
+        {
+            "institution": "Amity University Online",
+            "degree": "MCA",
+            "major": "AI & ML",
+            "graduationYear": "2024-2026",
+            "place": "Remote"
         }
     ], // Can create multiple education entries
     "skills": [
@@ -78,8 +85,9 @@ const cfg = {
     "experience": [
         {
             "orgName": "ThoughtWorks",
-            "position": "Developer and Consultant",
-            "duration": "1 year 8 months",
+            "position": "Sr Consultant and Developer",
+            "from": "Sep 2024",
+            "to": "Present",
             "description": ["Worked on project that saved time and staffing in iteration 0",
                 "It was also helpful to people new to Tech to get some basic understanding",
                 "I worked on go, java, flutter and infra tech during the duration"
@@ -87,8 +95,19 @@ const cfg = {
         },
         {
             "orgName": "ThoughtWorks",
-            "position": "Intern Developer and Consultant",
-            "duration": "6 months",
+            "position": "Consultant and Developer",
+            "from": "Jan 2021",
+            "to": "Aug 2024",
+            "description": ["Worked on project that saved time and staffing in iteration 0",
+                "It was also helpful to people new to Tech to get some basic understanding",
+                "I worked on go, java, flutter and infra tech during the duration"
+            ]
+        },
+        {
+            "orgName": "ThoughtWorks",
+            "position": "Intern",
+            "from": "June 2020",
+            "to": "Dec 2020",
             "description": ["Worked on project that saved time and staffing in iteration 0",
                 "It was also helpful to people new to Tech to get some basic understanding",
                 "I worked on java tech during the duration"
@@ -96,11 +115,32 @@ const cfg = {
         },
         {
             "orgName": "BridgeLabz",
-            "position": "Trainee",
-            "duration": "6 months",
+            "position": "Apperentinship",
+            "from": "Dec 2019",
+            "to": "May 2020",
             "description": ["Learned about basics of clean coding and best practices to be followed",
                 "Took training on developing web app using react js, java and postgresql",
                 "Created a book store application to sell books online",
+            ]
+        },
+        {
+            "orgName": "GlobalStep",
+            "position": "Tester",
+            "from": "May 2019",
+            "to": "Nov 2019",
+            "description": ["Manual testing for games",
+                "Performance testing",
+                "Automation",
+            ]
+        },
+        {
+            "orgName": "GlobalStep",
+            "position": "Intern",
+            "from": "Feb 2019",
+            "to": "April 2019",
+            "description": ["Manual testing for games",
+                "Performance testing",
+                "Automation",
             ]
         }
     ],
